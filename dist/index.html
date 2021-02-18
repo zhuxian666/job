@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>Document</title>
+  <title>我的简历</title>
+  <style>* {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }</style>
+  <style media="print">body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }</style>
+  <style>body {
+      font-family: arial, sans-serif;
+    }
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+  ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }</style>
+
+  <style>.projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }</style>
+  <style>.skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+
+    @media print {
+      #skills {
+        display: none;
+      }
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }</style>
+  <style>.openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}</style>
+  <style>.jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }</style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>杨程</h1>
+      <img src="/xx.3672fbaf.png" alt="" width="100" height="100">
+      <p>
+        男 | 21岁 | 前端开发工程师 | 黑龙江
+      </p>
+      <p>
+        手机：15573739897 | 微信：yc2303103304 | 邮箱：2303103304@qq.com
+      </p>
+    </section>
+    <section class="skills">
+      <h2>技能</h2>
+      <ul>
+        <li>熟悉页面开发技能，能将设计稿<strong>完美还原</strong>，熟悉网页布局，响应式布局，熟悉UI重构 </li>
+        <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+        <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+        <li>熟悉 ES6，包括 let / Promise / 析构赋值 / 展开运算符等</li>
+        <li>熟悉<strong>CSS/SCSS</strong> 的使用，文档流，盒模型，flex布局</li>
+        <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+        <li>了解 <strong>前端开发工具</strong> 的使用，包括Git / npm / yarn / Webpack等</li>
+      </ul>
+    </section>
+    <section class="projects">
+      <h2>开源项目及作品</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>轻记账</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            使用技术： <strong>Vue</strong> / <strong>VueCli</strong> / 
+            <strong>VueRouter</strong> /<strong>Vuex</strong> /<strong>TypeScript</strong> / 
+            <strong>Echarts</strong> /<strong>Webpack</strong>
+
+          </p>
+          <p>项目简介：</p>
+          <p>
+            这是我在学习Vue时做的一款记账项目，这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+            而且可以通过图表查看自己的消费习惯，可以自定义好看的记账标签。
+          </p><p>
+            在制作过程让我对Vue + TypeScript 有了新的认识。收获制作单页应用的宝贵经验。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>轻导航</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            使用技术： <strong>正则表达式</strong> / <strong>jQuery</strong> / <strong>localStorage</strong>
+          </p>
+          <p>
+            项目描述：这是我在学习jQuery和Javascript时写的一个导航页面，目前是我的浏览器首页，
+            它支出百度搜索并可以随意的添加自己喜欢的网站。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>会动的皮卡丘</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            使用技术： <strong>css</strong> / <strong>Javascript</strong>
+          </p>
+          <p>
+            项目描述：这是我在学习css时写的一个小项目，并且以动态的形式展示出来，同时还适配移动端和PC.
+          </p>
+        </li>
+      </ol>
+    </section>
+    <section>
+      <h2>能力图</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>自己写的 DOM 库</h3>
+            <a href="#">源码链接</a>
+          </header>
+          <p>实现了元素选择、元素创建、<strong>事件委托</strong></p>
+        </li>
+        <li>
+          <header>
+            <h3>简易画板</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2017年</time>~<time>2021年</time></span>
+        黑龙江工程学院  本科
+      </p>
+    </section>
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="/main.1f19ae8e.js"></script>
+</body>
+
+</html>
