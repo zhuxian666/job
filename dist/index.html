@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <title>Document</title>
-  <title>我的简历</title>
+  <title>简历</title>
   <style>* {
       box-sizing: border-box;
     }
@@ -94,9 +93,11 @@
       right: 0;
     }</style>
 
-  <style>.projects {}
-
+  <style>.projects{
+      position: relative;
+    }
     .projects p {
+      padding-right: 170px;
       color: #666;
     }
 
@@ -111,20 +112,30 @@
     }
 
     .projects>ol>li {
+      position: relative;
       margin-bottom: 24px;
     }
 
     .projects>ol>li>header {
-      display: flex;
-      justify-content: space-between;
+     
     }
-
+    .link{
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+    }
+    .link > div{
+      display: flex;
+      margin: 0 10px;
+      flex-direction: column;
+    }
+    
     .projects>ol>li h3 {
       display: inline-block;
     }</style>
-  <style>.skills {}
-
-    #skills {
+  <style>#skills {
 
       width: 500px;
       height: 270px;
@@ -146,7 +157,6 @@
       margin-right: 24px;
     }
 
-    .skills>.wrapper>#skills {}
 
     .skills>.wrapper>ul {
       color: #666;
@@ -160,36 +170,30 @@
       line-height: 1.2;
       margin-bottom: 8px;
     }</style>
-  <style>.openSource {}
-
-    .openSource>h2 {}
-
-    .openSource header img {
+  <style>.openSource>ul>li {
+      position: relative;
+      margin-bottom: 24px;
+    }
+    .openSource>ul>li>.link{
       position: absolute;
       top: 0;
       right: 0;
+      display: flex;
+      flex-direction: row;
     }
-
-    .openSource>ul {}
-
-    .openSource>ul>li {
-      margin-bottom: 24px;
+    .openSource>ul>li>.link > div{
+      display: flex;
+      margin: 0 10px;
+      flex-direction: column;
     }
 
     .openSource header {
-      position: relative;
       display: flex;
-      justify-content: space-between;
-    }
-
-    .openSource h3 {}</style>
-  <style>.jobs {}
-
-    .jobs>h2 {}
-
-    .jobs>ol {}
-
-    .jobs>ol>li {
+      padding-bottom: 20px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }</style>
+  <style>.jobs>ol>li {
       margin: 12px 0;
     }
 
@@ -230,10 +234,10 @@
     <section class="skills">
       <h2>技能</h2>
       <ul>
-        <li>熟悉页面开发技能，能将设计稿<strong>完美还原</strong>，熟悉网页布局，响应式布局，熟悉UI重构 </li>
+        <li>熟悉页面开发技能，能够使用<strong>HTML5</strong>和CSS3进行符合Web标准的语义化开发，能将设计稿<strong>完美还原</strong>，熟悉网页布局，响应式布局，熟悉UI重构 </li>
+        <li>熟悉<strong>JavaScript</strong>  语言 掌握<strong>ES6+</strong>  语法，持续关注ECMAScript标准</li>
         <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
         <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
-        <li>熟悉 ES6，包括 let / Promise / 析构赋值 / 展开运算符等</li>
         <li>熟悉<strong>CSS/SCSS</strong> 的使用，文档流，盒模型，flex布局</li>
         <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
         <li>了解 <strong>前端开发工具</strong> 的使用，包括Git / npm / yarn / Webpack等</li>
@@ -244,11 +248,44 @@
       <ol>
         <li>
           <header>
-            <h3>轻记账</h3>
-            <span>
-              <a href="#">源码链接</a>
+            <h3>Light UI</h3>
+            <br>
+            <p>
+              使用技术： <strong>Vue</strong> / <strong>Sass</strong> / 
+            </p>
+            <div class="link">
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
+                <a href="#">源码链接</a>
+              </div>
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
               <a href="#">项目预览</a>
-            </span>
+              </div>
+            </div>
+          </header>
+          
+          <p>项目简介：</p>
+          <p>
+            这个组件库的开发目的主要是个人对平时开发中需求较多的组件进行的总结，研究。
+            并且我还推出了官方文档，主要组件有Button、Tabs等。
+          </p><p>
+            制作这个UI组件的过程中对公共组件的封装，以及制作有了深刻的认识。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>轻记账</h3>
+            <div class="link">
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
+                <a href="#">源码链接</a>
+              </div>
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
+              <a href="#">项目预览</a>
+              </div>
+            </div>
           </header>
           <p>
             使用技术： <strong>Vue</strong> / <strong>VueCli</strong> / 
@@ -267,10 +304,16 @@
         <li>
           <header>
             <h3>轻导航</h3>
-            <span>
-              <a href="#">源码链接</a>
+            <div class="link">
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
+                <a href="#">源码链接</a>
+              </div>
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
               <a href="#">项目预览</a>
-            </span>
+              </div>
+            </div>
           </header>
           <p>
             使用技术： <strong>正则表达式</strong> / <strong>jQuery</strong> / <strong>localStorage</strong>
@@ -283,10 +326,16 @@
         <li>
           <header>
             <h3>会动的皮卡丘</h3>
-            <span>
-              <a href="#">源码链接</a>
+            <div class="link">
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
+                <a href="#">源码链接</a>
+              </div>
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
               <a href="#">项目预览</a>
-            </span>
+              </div>
+            </div>
           </header>
           <p>
             使用技术： <strong>css</strong> / <strong>Javascript</strong>
@@ -303,31 +352,34 @@
         <div id="skills"></div>
       </div>
     </section>
-
-
-
-
-
-
-
-
     <section class="openSource">
       <h2>开源项目</h2>
       <ul>
         <li>
           <header>
             <h3>自己写的 DOM 库</h3>
-            <a href="#">源码链接</a>
+            <div class="link">
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
+                <a href="#">源码链接</a>
+              </div>
+            </div>
           </header>
           <p>实现了元素选择、元素创建、<strong>事件委托</strong></p>
         </li>
         <li>
           <header>
             <h3>简易画板</h3>
-            <span>
-              <a href="#">源码链接</a>
+            <div class="link">
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
+                <a href="#">源码链接</a>
+              </div>
+              <div>
+                <img src="/xx.3672fbaf.png" alt="" width="60" height="60">
               <a href="#">项目预览</a>
-            </span>
+              </div>
+            </div>
           </header>
           <p>这是我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
         </li>

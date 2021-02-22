@@ -124,7 +124,7 @@ var option = {
   radar: {
     name: {
       textStyle: {
-        color: '#8064A2',
+        color: '#f60',
         backgroundColor: '#D9D9D9',
         borderRadius: 3,
         padding: [3, 5]
@@ -153,7 +153,7 @@ var option = {
   series: [{
     type: 'radar',
     itemStyle: {
-      color: "rgba(129, 20, 173, 1)"
+      color: "#f60"
     },
     tooltip: {
       trigger: 'item'
@@ -193,7 +193,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62418" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56570" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
